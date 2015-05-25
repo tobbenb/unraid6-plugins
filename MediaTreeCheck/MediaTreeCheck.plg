@@ -1,0 +1,125 @@
+<?xml version='1.0' standalone='yes'?>
+
+<!-- PLUGIN DEFINITIONS -->
+<!DOCTYPE PLUGIN [
+	<!ENTITY name      "MediaTreeCheck">
+	<!ENTITY author    "tobbenb">
+	<!ENTITY version   "2015.05.25">
+	<!ENTITY pluginURL "https://github.com/tobbenb/unraid6-plugins/MediaTreeCheck/raw/master/MediaTreeCheck.plg">
+	<!ENTITY plugin    "/boot/config/plugins/&name;">
+	<!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
+]>
+
+<PLUGIN  name="&name;"
+		 author="&author;"
+		 version="&version;"
+		 pluginURL="&pluginURL;"
+>
+
+<CHANGES>
+25.05.2015
+	- Internal test release
+</CHANGES>
+
+<FILE Name="&emhttp;/README.md">
+<INLINE>
+MediaTreeCheck is a plugin to check if you have a kernel with media tree installed and if you DVB Adapter is recognized. 
+</INLINE>
+</FILE>
+
+<FILE Name="&emhttp;/MediaTreeCheck.png" Type="base64">
+<INLINE>
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAACXBIWXMAAAsTAAAL
+EwEAmpwYAAAAB3RJTUUH3wUZFAYd5D5TzAAAAEVpVFh0Q29tbWVudAAAAAAAQ1JF
+QVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5
+ID0gOTAKZ51HQAAABMdJREFUWMPtWEtIOl0Uv9dRZ7QwI7O3PcBHRWFlYI9lQbWo
+RbSIHgujFiIWBYGroNq0y1XhoihoEVS7BCFq0QMKhV7QgyAqMirJqUytdOa/uHyT
+n47V17fp+/Cs7pzz89zf/O65cw4C8JuMx+NxwC+zGKEYoRihGKEYoRih/zoh7gc1
+DkcgEGAYRtM0O3cO5/Hx8Zt5MQyLi4tjTQUhpCjK4/F8QSgrK8tkMhUXF7+/v7NC
+IYR+v39ra8tsNrvd7s9k53D6+vpaWlpeX1+jYVwu19zc3NLSUtQsBQUFdrud/sr8
+fv/e3p5CofiEEEEQLpfry1QPDw86nS5sHvpQiKbpYDCI1m63+/z8nKIo9CgQCJRK
+JZfLBQDgOF5cXGy1WktKSp6fn1kJNTY2JiUlofXNzY3T6eTxeBiGQQgxDFMqlSiU
+mJhoMpn29vYcDgdLlvz8/O3tbcR9aWkpLi6O85dBCKVS6djYmMfjYd5vZmYmmkLr
+6+sIc3193dTUhEqKMZVKdX19zeRpbW0NVYid0OLiIkEQkTt1dnYyZ+HxeDIyMiIx
+SqWS2cxmswmFwsh67+npYTD9/f1I+5+MsLOzs1NTU6jqcRzv7u6OxBiNRrR4eXmx
+2WxerzcMEHbFnE5nIBD44siiKQQAEIvFTqcTwfb398OiAoGAkfDo6Egmk4UeB0EQ
+QqFQpVKtrKwgzM7OjkqlYi/qbxpJkmtra62trRDCzMzMhoYGq9XKRDs6OsRiMQAg
+EAhsbGxcXl4yIb1en5aWxuVytVptVVXV29vb4eHh8PDw8fEx+07fVAgAUF1djWCB
+QGB6ejo0tLm5SVEUTdMkSZaVlTF+rVbr9XqZugkGgwcHB6jeo17779vGxsbJyYlS
+qcQwTKPRZGdnX1xcAAAqKyvz8/MhhDRNOxyO0MtcVFS0tbXF5/Pf3t5yc3Pz8vKk
+UqnRaHx5eVlZWflXCqWkpAiFQpPJhJBPT096vR6FLBZLIBCgaZqiqObm5tBfJScn
+y2QymUyWmZlZVFQ0MzPD1Jlarf75tQcAtLW1GQyGlJQURv/5+XkAQHp6+v7+PvIg
+wT4xlUp1eXmJwKOjo8yn4R9fexzHjUbjwMDA/f398vIycqrVarVaXV9fn52djTwT
+ExOf53G73aenp2it0WgSEhJ+Mn7gOG6xWDQaTU5OTnV19eTkJPIrFIq6urqamhqR
+SAQACAaDXxKKj49nbjufz4cQsnT7sGoXi8V+v5/p3nK5fGRkpLa2Fnna29sNBoPL
+5ZJIJACA3t5ePp+PQtPT0z6fLzExMdrsIRKJhoaGmK/82dlZ6MeTnVBFRcXi4iKT
+USKRMB0RAHB1dbWwsBAMBqempgYHBwEAqampTNRsNo+NjWm1WqZVRxZQUlISTdMQ
+QpIkFxYWSJJkwRUWFu7u7n4+MNzd3Vmt1tLSUvSu5eXlYYDV1VWFQkF/z25vbw0G
+Q+jN4vF4H4eXnp7e1dUll8tZOwtN0/f393a7fXl52efzIadIJBoeHs7KykJiEAQx
+Pj4uEAh0Ol00eUKzWa1Wm80WivwbITSshNZXWEeM3ANCSBAEjuPMI0mS8fHxGIZ9
+XtQURT09PbHW7u+a8GP/oMUIxQjFCMUIxQj9DwjBX9VguVzuH+t4GNbJxee0AAAA
+AElFTkSuQmCC
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash">
+<INLINE>
+# Change permissions on DVB Adapters
+chown -R nobody:users /dev/dvb
+</INLINE>
+</FILE>
+
+<FILE Name="&emhttp;/MediaTreeCheck.page">
+<INLINE>
+<![CDATA[
+Menu="Utilities"
+Icon="MediaTreeCheck.png"
+Version="0.1"
+Author="Tobbenb"
+Type="php"
+Title="MediaTreeCheck"
+
+---
+
+<?PHP
+$kernel = trim(shell_exec( "uname -r" ));
+$mediatree = file_exists( "/lib/modules/$kernel/kernel/drivers/media" ) ? "yes" : "no";
+$dvb_adapter = file_exists( "/dev/dvb/adapter0/frontend0") ? "yes" : "no";
+?>
+
+<div style="width: 49%; float:left">
+	<div id="title">
+		<span class="left">Status Media Tree & DVB Adapter:	</span>
+	</div>
+    	<table class="settings">
+			<tr>
+				<td>Media Tree:</td>
+				<?if ($mediatree=="yes"):?>
+					<td style="color:green">DETECTED</td>
+				<?else:?>
+					<td style="color:red"><b>NOT DETECTED</b></td>
+                <?endif;?>	
+			</tr>
+            <tr>
+				<td>DVB Adapter:</td>
+				<?if ($dvb_adapter=="yes"):?>
+					<td style="color:green">DETECTED</td>
+				<?else:?>
+					<td style="color:red"><b>NOT DETECTED</b></td>
+                <?endif;?>
+			</tr>
+        </table>
+</div>
+
+]]>
+</INLINE>
+</FILE>
+
+<!-- PLUGIN REMOVAL SCRIPT -->
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+rm -r /usr/local/emhttp/plugins/&name;
+</INLINE>
+</FILE>
+
+</PLUGIN>
