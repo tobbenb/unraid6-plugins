@@ -65,7 +65,9 @@ AElFTkSuQmCC
 <FILE Run="/bin/bash">
 <INLINE>
 # Change permissions on DVB Adapters
-chown -R nobody:users /dev/dvb
+if [ ! -d /dev/dvb ]; then
+  chown -R nobody:users /dev/dvb
+fi
 </INLINE>
 </FILE>
 
