@@ -4,7 +4,7 @@
 <!DOCTYPE PLUGIN [
 	<!ENTITY name      "MediaTreeCheck">
 	<!ENTITY author    "tobbenb">
-	<!ENTITY version   "2015.05.25">
+	<!ENTITY version   "2015.05.26">
 	<!ENTITY pluginURL "https://raw.githubusercontent.com/tobbenb/unraid6-plugins/master/MediaTreeCheck/MediaTreeCheck.plg">
 	<!ENTITY plugin    "/boot/config/plugins/&name;">
 	<!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
@@ -17,7 +17,12 @@
 >
 
 <CHANGES>
-25.05.2015
+##&name;
+
+###&version;
+	- Added function to check if /dev/dvb is present before changing permissions.
+	
+###25.05.2015
 	- Internal test release
 </CHANGES>
 
