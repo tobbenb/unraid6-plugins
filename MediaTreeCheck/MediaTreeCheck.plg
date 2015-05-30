@@ -2,17 +2,19 @@
 
 <!-- PLUGIN DEFINITIONS -->
 <!DOCTYPE PLUGIN [
-	<!ENTITY name      "MediaTreeCheck">
-	<!ENTITY author    "tobbenb">
-	<!ENTITY version   "2015.05.26a">
-	<!ENTITY pluginURL "https://raw.githubusercontent.com/tobbenb/unraid6-plugins/master/MediaTreeCheck/MediaTreeCheck.plg">
-	<!ENTITY plugin    "/boot/config/plugins/&name;">
-	<!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
+	<!ENTITY name		"MediaTreeCheck">
+	<!ENTITY author		"tobbenb">
+	<!ENTITY version	"2015.05.30">
+	<!ENTITY launch		"Utilities/MediaTreeCheck">
+	<!ENTITY pluginURL	"https://raw.githubusercontent.com/tobbenb/unraid6-plugins/master/MediaTreeCheck/MediaTreeCheck.plg">
+	<!ENTITY plugin		"/boot/config/plugins/&name;">
+	<!ENTITY emhttp		"/usr/local/emhttp/plugins/&name;">
 ]>
 
 <PLUGIN  name="&name;"
 		 author="&author;"
 		 version="&version;"
+		 launch="&launch;"
 		 pluginURL="&pluginURL;"
 >
 
@@ -20,12 +22,15 @@
 ##&name;
 
 ###&version;
-	- Another try to fix changing permissions on /dev/dvb
+	- Added launch entity so the plugin is launched from the plugins page whne clicking the icon. 
 	
-###26.05.2015
+###2015.05.26a
+	- Another try to fix changing permissions on /dev/dvb.
+	
+###2015.05.26
 	- Added function to check if /dev/dvb is present before changing permissions.
 	
-###25.05.2015
+###2015.05.25
 	- Internal test release
 </CHANGES>
 
@@ -84,7 +89,7 @@ fi
 <![CDATA[
 Menu="Utilities"
 Icon="MediaTreeCheck.png"
-Version="0.1"
+Version="&version;"
 Author="Tobbenb"
 Type="php"
 Title="MediaTreeCheck"
