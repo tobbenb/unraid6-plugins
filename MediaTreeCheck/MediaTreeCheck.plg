@@ -77,6 +77,16 @@ if [ -d /dev/dvb ]; then
   chown -R nobody:users /dev/dvb
 fi
 </INLINE>
+
+</FILE>
+<FILE Name="&emhttp;/Utilities.page">
+<INLINE>
+<![CDATA[
+Menu="Settings"
+Title="User Utilities"
+Type="menu"
+]]>
+</INLINE>
 </FILE>
 
 <FILE Name="&emhttp;/MediaTreeCheck.page">
