@@ -4,7 +4,7 @@
 <!DOCTYPE PLUGIN [
 	<!ENTITY name      "MediaTreeCheck">
 	<!ENTITY author    "tobbenb">
-	<!ENTITY version   "2015.05.26a">
+	<!ENTITY version   "2015.05.31">
 	<!ENTITY pluginURL "https://raw.githubusercontent.com/tobbenb/unraid6-plugins/master/MediaTreeCheck/MediaTreeCheck.plg">
 	<!ENTITY plugin    "/boot/config/plugins/&name;">
 	<!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
@@ -20,6 +20,9 @@
 ##&name;
 
 ###&version;
+	- Added Utilities.page so plugin appears in the settings page in case no other plugins are installed.
+
+###26a.05.2015
 	- Another try to fix changing permissions on /dev/dvb
 	
 ###26.05.2015
