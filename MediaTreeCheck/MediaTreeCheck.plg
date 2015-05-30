@@ -4,7 +4,7 @@
 <!DOCTYPE PLUGIN [
 	<!ENTITY name      "MediaTreeCheck">
 	<!ENTITY author    "tobbenb">
-	<!ENTITY version   "2015.05.31">
+	<!ENTITY version   "2015.05.31a">
 	<!ENTITY pluginURL "https://raw.githubusercontent.com/tobbenb/unraid6-plugins/master/MediaTreeCheck/MediaTreeCheck.plg">
 	<!ENTITY plugin    "/boot/config/plugins/&name;">
 	<!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
@@ -13,6 +13,7 @@
 <PLUGIN  name="&name;"
 		 author="&author;"
 		 version="&version;"
+		 launch="&launch;"
 		 pluginURL="&pluginURL;"
 >
 
@@ -20,15 +21,21 @@
 ##&name;
 
 ###&version;
-	- Added Utilities.page so plugin appears in the settings page in case no other plugins are installed.
+	- Added launch entity so the plugin is launched from the plugins page when clicking the icon. 
 
+###31.05.2015
+	- Added Utilities.page so plugin appears in the settings page in case no other plugins are installed.
+	
 ###26a.05.2015
 	- Another try to fix changing permissions on /dev/dvb
+
+###2015.05.26a
+	- Another try to fix changing permissions on /dev/dvb.
 	
-###26.05.2015
+###2015.05.26
 	- Added function to check if /dev/dvb is present before changing permissions.
 	
-###25.05.2015
+###2015.05.25
 	- Internal test release
 </CHANGES>
 
@@ -97,12 +104,14 @@ Type="menu"
 <![CDATA[
 Menu="Utilities"
 Icon="MediaTreeCheck.png"
-Version="0.1"
+Version="&version;"
 Author="Tobbenb"
 Type="php"
 Title="MediaTreeCheck"
 
 ---
+
+<!-- This part was written by Wojciech Walaszek for the tvheadend plugin and modified by me to only check media tree availability -->
 
 <?PHP
 $kernel = trim(shell_exec( "uname -r" ));
