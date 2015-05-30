@@ -22,7 +22,7 @@
 ##&name;
 
 ###&version;
-	- Added launch entity so the plugin is launched from the plugins page whne clicking the icon. 
+	- Added launch entity so the plugin is launched from the plugins page when clicking the icon. 
 	
 ###2015.05.26a
 	- Another try to fix changing permissions on /dev/dvb.
@@ -95,6 +95,8 @@ Type="php"
 Title="MediaTreeCheck"
 
 ---
+
+<!-- This part was written by Wojciech Walaszek for the tvheadend plugin and modified by me to only check media tree availability -->
 
 <?PHP
 $kernel = trim(shell_exec( "uname -r" ));
