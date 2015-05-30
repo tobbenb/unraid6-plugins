@@ -2,12 +2,13 @@
 
 <!-- PLUGIN DEFINITIONS -->
 <!DOCTYPE PLUGIN [
-	<!ENTITY name      "MediaTreeCheck">
-	<!ENTITY author    "tobbenb">
-	<!ENTITY version   "2015.05.31a">
-	<!ENTITY pluginURL "https://raw.githubusercontent.com/tobbenb/unraid6-plugins/master/MediaTreeCheck/MediaTreeCheck.plg">
-	<!ENTITY plugin    "/boot/config/plugins/&name;">
-	<!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
+	<!ENTITY name		"MediaTreeCheck">
+	<!ENTITY author		"tobbenb">
+	<!ENTITY version	"2015.05.31a">
+	<!ENTITY launch		"Utilities/MediaTreeCheck">
+	<!ENTITY pluginURL	"https://raw.githubusercontent.com/tobbenb/unraid6-plugins/master/MediaTreeCheck/MediaTreeCheck.plg">
+	<!ENTITY plugin		"/boot/config/plugins/&name;">
+	<!ENTITY emhttp		"/usr/local/emhttp/plugins/&name;">
 ]>
 
 <PLUGIN  name="&name;"
