@@ -4,7 +4,7 @@
 <!DOCTYPE PLUGIN [
 	<!ENTITY name		"MediaTreeCheck">
 	<!ENTITY author		"tobbenb">
-	<!ENTITY version	"2015.05.31a">
+	<!ENTITY version	"2015.08.04">
 	<!ENTITY launch		"Utilities/MediaTreeCheck">
 	<!ENTITY pluginURL	"https://raw.githubusercontent.com/tobbenb/unraid6-plugins/master/MediaTreeCheck/MediaTreeCheck.plg">
 	<!ENTITY plugin		"/boot/config/plugins/&name;">
@@ -22,7 +22,10 @@
 ##&name;
 
 ###&version;
-	- Added launch entity so the plugin is launched from the plugins page when clicking the icon. 
+	- Removed Utilities page
+
+###2015.05.21a
+	- Added launch entity so the plugin is launched from the plugins page when clicking the icon.
 
 ###31.05.2015
 	- Added Utilities.page so plugin appears in the settings page in case no other plugins are installed.
