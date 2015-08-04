@@ -89,17 +89,6 @@ if [ -d /dev/dvb ]; then
 fi
 </INLINE>
 
-</FILE>
-<FILE Name="&emhttp;/Utilities.page">
-<INLINE>
-<![CDATA[
-Menu="Settings"
-Title="User Utilities"
-Type="menu"
-]]>
-</INLINE>
-</FILE>
-
 <FILE Name="&emhttp;/MediaTreeCheck.page">
 <INLINE>
 <![CDATA[
