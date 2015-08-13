@@ -91,6 +91,7 @@ if [ -d /dev/dvb ]; then
   chown -R nobody:users /dev/dvb
 fi
 </INLINE>
+</FILE>
 
 <FILE Name="&emhttp;/MediaTreeCheck.page">
 <INLINE>
