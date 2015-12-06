@@ -1,2 +1,2 @@
-# unraid6-plugins
-Plugins for unRaid v6
+# unraid6-plugin templates
+Plugin templates for unRaid v6
